@@ -5,14 +5,14 @@ module.exports = {
   greetings: `
   <speak>
     <p>
-      <prosody volume="+20db" pitch="+30%" rate="fast">
+      <prosody volume="+20db" pitch="+30%" rate="x-fast">
         Greetings Operation Spark Humans
       </prosody>
     </p>
     <p>
       ahem
       <break time="5ms" />
-      <prosody volume="+1db" pitch="+15%" range="high">
+      <prosody volume="+1db" pitch="+10%" range="high">
         <s>
           Greetings Operation Spark Humans
         </s>
