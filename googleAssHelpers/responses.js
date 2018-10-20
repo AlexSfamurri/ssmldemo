@@ -21,7 +21,7 @@ module.exports = {
         </s>
         <s>
           I will be narrating today's demonstration
-        <s>
+        </s>
       </prosody>
     </p>
     <prosody pitch="+5%" volume="-3db" range="high">
