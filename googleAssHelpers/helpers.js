@@ -2,7 +2,7 @@ const {
   dialogflow,
   SimpleResponse
 } = require('actions-on-google');
-
+const responseArray = require('./responses');
 const app = dialogflow();
 
 app.intent('Default Welcome Intent', conv => {
