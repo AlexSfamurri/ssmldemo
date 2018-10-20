@@ -73,7 +73,7 @@ module.exports = {
           </s>
         </prosody>
       </p>
-      <prosody pitch="+15" rate="slow" volume="+2db">
+      <prosody pitch="+15%" rate="slow" volume="+2db">
         <s>
           That is where my learning and training comes in
         </s>
