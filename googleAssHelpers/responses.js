@@ -10,7 +10,9 @@ module.exports = {
       </prosody>
     </p>
     <p>
-      ahem
+      <emphasis>
+        ahem
+      </emphasis>
       <break time="5ms" />
       <prosody volume="+1db" pitch="+10%" range="high">
         <s>
