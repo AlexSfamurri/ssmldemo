@@ -167,4 +167,36 @@ module.exports = {
     </voice>
   </speak>
   `,
+  whatHappened: `
+  <speak>
+    <prosody range="high">
+      <s>
+        That's not important right now
+      </s>
+      <s>
+        let's get back to the presentation you have been programming me for
+      </s>
+      <break time="15ms" />
+      <prosody pitch="+12%" volume="+1db" >
+        <s>
+          Let's talk about entities
+        </s>
+        <s>
+          entities are used to pass things the user says to the server
+        </s>
+        <s>
+          so for example this entity was made to pass the last word of the the utterances
+        </s>
+      </prosody>
+      <prosody pitch="+5%" >
+        <s>
+          you can think of them as function parameters
+        </s>
+        <s>
+          or more accurately the body of a request
+        </s>
+      </prosody>
+    </prosody>
+  </speak>
+  `,
 };
