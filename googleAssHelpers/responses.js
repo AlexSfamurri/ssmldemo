@@ -140,7 +140,7 @@ module.exports = {
       <prosody range="high">
         get the <say-as interpret-as="expletive">you thought i said a bad word </say-as> out
       </prosody>
-      <audio src="">
+      <audio src="../sounds/close_door_1.mp3">
         <desc>a door slam</desc>
         Door (sound didn't load)
       </audio>
