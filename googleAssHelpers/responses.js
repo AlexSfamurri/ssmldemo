@@ -140,10 +140,19 @@ module.exports = {
       <prosody range="high">
         get the <say-as interpret-as="expletive">you thought i said a bad word </say-as> out
       </prosody>
-      <audio src="https://actions.google.com/sounds/v1/doors/door_slams_fast_four_times.ogg" clipEnd="2s" soundLevel="+10db">
+      <audio src="https://actions.google.com/sounds/v1/doors/door_slams_fast_four_times.ogg" clipEnd="1500ms" soundLevel="+20db">
         <desc>a door slam</desc>
         Door (sound didn't load)
       </audio>
+      <break time="25ms" />
+      <prosody pitch="+5%" volume="+10db" rate="moderate" >
+        <s>
+          I am sorry about him
+        </s>
+        <prosody pitch="+10%" rate="fast" >
+          What were we talking about again
+        </prosody>
+      </prosody>
     </voice>
   </speak>
   `,
