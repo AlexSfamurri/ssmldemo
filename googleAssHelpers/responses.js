@@ -114,11 +114,9 @@ module.exports = {
         </prosody>
       </p>
     </voice>
-    <voice gender="female">
       <s>
         what
       </s>
-    </voice>
     <voice gender="male">
       <prosody pitch="+3%" volume="+4db">
         You know
@@ -130,41 +128,36 @@ module.exports = {
           that never seem to shut up
       </prosody>
     </voice>
-    <voice gender="female">
-      <prosody volume="+20db" range="high" pitch="+15%">
-        okay you are done
-        <break time="5ms" />
-      </prosody>
-    </voice>
+    <prosody volume="+20db" range="high" pitch="+15%">
+      okay you are done
+      <break time="5ms" />
+    </prosody>
     <voice gender="male">
       what did i do
       <break time="5ms" />
     </voice>
-    <voice gender="female">
-      <prosody range="high" pitch="+15%">
-        get the 
-          <say-as interpret-as="expletive">
-            you thought i said a bad word 
-          </say-as> 
-        out
+    <prosody range="high" pitch="+15%">
+      get the 
+        <say-as interpret-as="expletive">
+          you thought i said a bad word 
+        </say-as> 
+      out
+    <audio src="https://actions.google.com/sounds/v1/doors/door_slams_fast_four_times.ogg" clipEnd="1500ms" soundLevel="+20db">
+      <desc>a door slam</desc>
+      Door (sound didn't load)
+    </audio>
+    <break time="25ms" />
+    <prosody pitch="+5%" volume="+10db" rate="moderate" >
+      <s>
+        I am sorry about him
+      </s>
+      <s>
+        he is an idiot some times
+      </s>
+      <prosody pitch="+10%" rate="fast" >
+        What were we talking about again
       </prosody>
-      <audio src="https://actions.google.com/sounds/v1/doors/door_slams_fast_four_times.ogg" clipEnd="1500ms" soundLevel="+20db">
-        <desc>a door slam</desc>
-        Door (sound didn't load)
-      </audio>
-      <break time="25ms" />
-      <prosody pitch="+5%" volume="+10db" rate="moderate" >
-        <s>
-          I am sorry about him
-        </s>
-        <s>
-          he is an idiot some times
-        </s>
-        <prosody pitch="+10%" rate="fast" >
-          What were we talking about again
-        </prosody>
-      </prosody>
-    </voice>
+    </prosody>
   </speak>
   `,
   whatHappened: `
