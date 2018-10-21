@@ -107,8 +107,8 @@ module.exports = {
             is where we are able to tell the developers what we think we heard when someone was trying to activate one of our intents
           </s>
           <s>
-            due to stuff like wind <break time="1ms" />
-            background noise <break time="1ms" />
+            due to stuff like wind <break time="5ms" />
+            other people talking in the background <break time="5ms" />
             annoying toddlers
           </s>
         </prosody>
@@ -123,11 +123,15 @@ module.exports = {
       <prosody pitch="+3%" volume="+4db">
         You know
         <break time="5ms" />
-        Loud and in the background
+        those little 
+        <say-as interpret-as="expletive">
+          darlings 
+        </say-as> 
+          that never seem to shut up
       </prosody>
     </voice>
     <voice gender="female">
-      <prosody range="high">
+      <prosody volume="+20db" range="high">
         okay you are done
         <break time="5ms" />
       </prosody>
@@ -138,7 +142,11 @@ module.exports = {
     </voice>
     <voice gender="female">
       <prosody range="high">
-        get the <say-as interpret-as="expletive">you thought i said a bad word </say-as> out
+        get the 
+          <say-as interpret-as="expletive">
+            you thought i said a bad word 
+          </say-as> 
+        out
       </prosody>
       <audio src="https://actions.google.com/sounds/v1/doors/door_slams_fast_four_times.ogg" clipEnd="1500ms" soundLevel="+20db">
         <desc>a door slam</desc>
@@ -148,6 +156,9 @@ module.exports = {
       <prosody pitch="+5%" volume="+10db" rate="moderate" >
         <s>
           I am sorry about him
+        </s>
+        <s>
+          he is an idiot some times
         </s>
         <prosody pitch="+10%" rate="fast" >
           What were we talking about again
