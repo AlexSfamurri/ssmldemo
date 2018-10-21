@@ -131,7 +131,7 @@ module.exports = {
       </prosody>
     </voice>
     <voice gender="female">
-      <prosody volume="+20db" range="high" pitch="+15%>
+      <prosody volume="+20db" range="high" pitch="+15%">
         okay you are done
         <break time="5ms" />
       </prosody>
