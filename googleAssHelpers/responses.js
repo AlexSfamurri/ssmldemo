@@ -133,14 +133,14 @@ module.exports = {
       </prosody>
     </voice>
     <voice gender="male">
-      what
+      what did i do
       <break time="5ms" />
     </voice>
     <voice gender="female">
       <prosody range="high">
         get the <say-as interpret-as="expletive">you thought i said a bad word </say-as> out
       </prosody>
-      <audio src="../sounds/close_door_1.mp3">
+      <audio src="https://actions.google.com/sounds/v1/doors/door_slams_fast_four_times.ogg" clipEnd="2s" soundLevel="+10db">
         <desc>a door slam</desc>
         Door (sound didn't load)
       </audio>
