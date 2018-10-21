@@ -86,4 +86,65 @@ module.exports = {
     </prosody>
   </speak>
   `,
+  knowledge: `
+  <speak>
+    <voice gender="male">
+      <p>
+        <prosody pitch="+3%" volume="+4db">
+          <s>
+            Hi
+          </s>
+          <s>
+            I am just stepping in while she gets a glass of water
+          </s>
+          <s>
+            So this here
+          </s>
+          <s>
+            if Alex put the right section on the page <break time="1ms" />
+          </s>
+          <s>
+            is where we are able to tell the developers what we think we heard when someone was trying to activate one of our intents
+          </s>
+          <s>
+            due to stuff like wind <break time="1ms" />
+            background noise <break time="1ms" />
+            annoying toddlers
+          </s>
+        </prosody>
+      <p>
+    </voice>
+    <voice gender="female">
+      <s>
+        what
+      </s>
+    </voice>
+    <voice gender="male">
+      <prosody pitch="+3%" volume="+4db">
+        You know
+        <break time="5ms" />
+        Loud and in the background
+      </prosody>
+    </voice>
+    <voice gender="female">
+      <prosody range="high">
+        okay you are done
+        <break time="5ms" />
+      </prosody>
+    </voice>
+    <voice gender="male">
+      what
+      <break time="5ms" />
+    </voice>
+    <voice gender="female">
+      <prosody range="high">
+        get the <say-as interpret-as="expletive">you thought i said a bad word </say-as> out
+      </prosody>
+      <audio src="tteacher.net/Sound/Bruitages/porte-claque-17.mp3">
+        <desc>a door slam</desc>
+        Door (sound didn't load)
+      </audio>
+    </voice>
+  </speak>
+  `,
 };
