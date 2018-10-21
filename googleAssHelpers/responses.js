@@ -131,7 +131,7 @@ module.exports = {
       </prosody>
     </voice>
     <voice gender="female">
-      <prosody volume="+20db" range="high">
+      <prosody volume="+20db" range="high" pitch="+15%>
         okay you are done
         <break time="5ms" />
       </prosody>
@@ -141,7 +141,7 @@ module.exports = {
       <break time="5ms" />
     </voice>
     <voice gender="female">
-      <prosody range="high">
+      <prosody range="high" pitch="+15%">
         get the 
           <say-as interpret-as="expletive">
             you thought i said a bad word 
