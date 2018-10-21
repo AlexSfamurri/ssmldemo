@@ -112,7 +112,7 @@ module.exports = {
             annoying toddlers
           </s>
         </prosody>
-      <p>
+      </p>
     </voice>
     <voice gender="female">
       <s>
