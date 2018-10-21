@@ -142,6 +142,7 @@ module.exports = {
           you thought i said a bad word 
         </say-as> 
       out
+    </prosody>
     <audio src="https://actions.google.com/sounds/v1/doors/door_slams_fast_four_times.ogg" clipEnd="1500ms" soundLevel="+20db">
       <desc>a door slam</desc>
       Door (sound didn't load)
