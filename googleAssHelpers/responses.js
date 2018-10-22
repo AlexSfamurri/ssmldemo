@@ -207,4 +207,61 @@ module.exports = {
     </prosody>
   </speak>
   `,
+  nutsBolts: `
+  <prosody range="high" pitch="+12%" rate="moderate">
+    <s>
+      Sounds good to me
+    </s>
+    <s>
+      I will give you a bit to switch to <say-as interpret-as="characters"> VS </say-as> Code
+    </s>
+    <break time="50ms" />
+    <s>
+      <prosody pitch="+3%">
+        I hope you are ready
+      </prosody>
+    </s>
+    <s>
+      <prosody pitch="+6%">
+        because we don't have time to waste
+      </prosody>
+    </s>
+    <p>
+      <s>
+        So at the top on lines 1 through 7
+      </s>
+      <s>
+        <prosody pitch="+12%">
+          we are requiring all the files 
+            <break time="5ms" />
+          and the methods we need to make me 
+            <break time="5ms" /> 
+          well 
+            <break time="3ms" />
+          me
+        </prosody>
+      </s>
+      <s>
+        actions on google is the npm module that google released to help developers make awesome code for me
+      </s>
+      <s>
+        with it
+          <break time="4ms" />
+        they can essentially bring my personality to life
+      </s>
+      <s>
+        <prosody pitch="+15%">
+          it also helps cut down on what would have been
+            <break time="3ms" />
+          <emphasis>
+            a lot of boiler plate
+          </emphasis>
+        </prosody>
+      </s>
+      <s>
+        this is also where the files alex made to give me access to responses and the database are as well
+      </s>
+    </p>
+  </prosody>
+  `,
 };

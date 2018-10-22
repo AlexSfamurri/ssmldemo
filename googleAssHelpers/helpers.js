@@ -2,7 +2,7 @@ const {
   dialogflow,
   SimpleResponse
 } = require('actions-on-google');
-const { greetings, intro, knowledge, whatHappened} = require('./responses');
+const { greetings, intro, knowledge, whatHappened, nutsBolts} = require('./responses');
 const db = require('../database/databasehelpers');
 const app = dialogflow();
 
@@ -63,7 +63,7 @@ app.intent('under the hood', conv => {
       }, '');
       conv.ask(new SimpleResponse({
         text: insert,
-        speech: `<speak> ${insert} </speak> `
+        speech: `<speak> ${nutsBolts} ${insert} </speak> `
       }));
     })
     .catch(err => {
