@@ -35,6 +35,12 @@ app.intent('what happened', conv => {
       The last word said to invoke this response was
     </s>
   `+ lastWord + `
+    <s>
+      So alex
+    </s>
+    <s>
+      whats next on the agenda
+    </s>
   </speak>`)
 });
 
