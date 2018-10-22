@@ -321,7 +321,7 @@ module.exports = {
           You will also be able to notice the parts where you heard the censor bleeps
         </s>
         <s>
-          nothing bad was actually being censored
+          nothing bad was actually being censored on lines 142 and 126
         </s>
       </prosody>
       <prosody pitch="+16%">
