@@ -45,6 +45,9 @@ app.intent('what happened', conv => {
         whats next on the agenda
       </s>
     </speak>`);
+  }).catch(err => {
+    console.error(err);
+    
   });
 });
 
