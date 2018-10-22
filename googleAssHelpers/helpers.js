@@ -63,13 +63,37 @@ app.intent('under the hood', conv => {
       }, '');
       conv.ask(new SimpleResponse({
         text: insert,
-        speech: `<speak> ${nutsBolts} ${insert} </speak> `
+        speech: `
+        <speak> 
+          ${nutsBolts}
+          <s>
+            these are all the words i have stored in our 
+            <say-as interpret-as="characters">
+            sql 
+            </say-as> database so far
+          </s>
+          ${insert}
+          <break time="25ms" />
+          how are we doing on time?
+        </speak> `
       }));
     })
     .catch(err => {
       console.error(err);
       
     });
+});
+
+app.intent('that is all', conv => {
+  conv.close(`
+  <speak>
+    <s>
+      okay
+    </s>
+    <prosody pitch="+20%">
+      any questions?
+    </prosody>
+  </speak>`)
 });
 
 app.intent('Default Fallback Intent', conv => {

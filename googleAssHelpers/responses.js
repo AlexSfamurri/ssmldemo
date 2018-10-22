@@ -231,7 +231,7 @@ module.exports = {
         So at the top on lines 1 through 7
       </s>
       <s>
-        <prosody pitch="+12%">
+        <prosody pitch="+10%">
           we are requiring all the files 
             <break time="5ms" />
           and the methods we need to make me 
@@ -262,6 +262,96 @@ module.exports = {
         this is also where the files alex made to give me access to responses and the database are as well
       </s>
     </p>
+    <break time="15ms" />
+    <p>
+      <prosody pitch="+2%" >
+        <s>
+          after that you will notice the app dot intent methods
+        </s>
+        <s>
+          these are the handlers that respond based on the intent that my machine learning thinks you wish to invoke
+        </s>
+        <s>
+          <prosody pitch="+7%">
+            you can tell which intent is being invoked based on the matching string being passed into the intent method
+          </prosody>
+        </s>
+        <s>
+          <prosody pitch="+4%">
+            inside each you will notice the dot ask method
+          </prosody>
+        </s>
+        <s>
+          this method is what needs to be invoked to tell me what i should be saying
+        </s>
+        <s>
+          <prosody pitch="+13%" >
+            you may notice that they do not all take the same parameters
+          </prosody>
+        </s>
+        <s>
+          alex decided to do this to show some of the many different ways you can send me the responses you wish for me to say
+        </s>
+      </prosody>
+    </p>
+    <p>
+      <prosody pitch="+11%">
+        <s>
+          you can also send back more than one ask
+        </s>
+        <s>
+          but the moment you send back with the close method
+          <break time="7ms" />
+          i will believe that is all and close down
+        </s>
+      </prosody>
+    </p>
+    <p>
+      <prosody pitch="+9%" >
+        <s>
+          on the right side of the screen we have my 
+            <say-as interpret-as="characters">
+              ssml
+            </say-as> 
+          scripts are being held and then exported to my helper file
+        </s>
+      </prosody>
+      <prosody pitch="+6%" >
+        <s>
+          You will also be able to notice the parts where you heard the censor bleeps
+        </s>
+        <s>
+          nothing bad was actually being censored
+        </s>
+      </prosody>
+      <prosody pitch="+16%">
+        <s>
+          it was all for dramatic effect
+        </s>
+        <s>
+          and an excuse to demonstrate that feature as well
+        </s>
+      </prosody>
+    </p>
+    <p>
+      <s>
+        we both realize this is a lot of text to try and read
+      </s>
+      <s>
+        so Alex will leave these up
+        <break time="10ms" />
+        and enhance more if needed
+      </s>
+      <s>
+        so that if you have any questions about anything we may have left out
+      </s>
+      <s>
+        Alex will be more than happy to answer
+      </s>
+    </p>
+    <s>
+      one other thing though real quick
+    </s>
   </prosody>
   `,
 };
