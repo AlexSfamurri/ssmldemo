@@ -51,17 +51,22 @@ app.intent('what happened', conv => {
 app.intent('under the hood', conv => {
   console.log('we made it here, under the hood was invoked');
   
-  return db.getWords(results => {
-    console.log(results, ' this is the results array');
-    conv.ask('<speak> hi </speak>')
-    const insert = results.reduce((response, word)=>{
-      return response + ' ' + word;
-    }, '');
-    // conv.ask(new SimpleResponse({
-    //   text: insert,
-    //   speech: `<speak> hi </speak> `
-    // }));
-  });
+  return db.getWords()
+    .then(results => {
+      console.log(results, ' this is the results array');
+
+      const insert = results.reduce((response, word) => {
+        return response + ' ' + word;
+      }, '');
+      conv.ask(new SimpleResponse({
+        text: insert,
+        speech: `<speak> ${insert} </speak> `
+      }));
+    })
+    .catch(err => {
+      console.error(err);
+      
+    });
 });
 
 app.intent('Default Fallback Intent', conv => {
