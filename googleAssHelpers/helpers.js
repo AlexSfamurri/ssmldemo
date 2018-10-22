@@ -3,6 +3,7 @@ const {
   SimpleResponse
 } = require('actions-on-google');
 const { greetings, intro, knowledge, whatHappened} = require('./responses');
+const db = require('../database/databasehelpers');
 const app = dialogflow();
 
 app.intent('Default Welcome Intent', conv => {
@@ -29,7 +30,7 @@ app.intent('what happened', conv => {
   conv.ask(`
   <speak> 
     <s>
-      But i can give show you that i am listening
+      But i can show you that i am listening
     </s>
     <s>
       The last word said to invoke this response was
@@ -41,7 +42,11 @@ app.intent('what happened', conv => {
     <s>
       whats next on the agenda
     </s>
-  </speak>`)
+  </speak>`);
+});
+
+app.intent('under the hood', conv => {
+
 });
 
 app.intent('Default Fallback Intent', conv => {
