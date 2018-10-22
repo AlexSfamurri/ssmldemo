@@ -148,6 +148,15 @@ module.exports = {
       Door (sound didn't load)
     </audio>
     <break time="25ms" />
+    <audio src="https://actions.google.com/sounds/v1/transportation/car_door_open_shut.ogg" soundLevel="+15db">
+      <desc> a car door open and close </desc>
+      Car door (sound didn't load)
+    </audio>
+    <break time="25ms" />
+    <audio scr="https://actions.google.com/sounds/v1/transportation/car_door_open_shut.ogg" clipEnd="5s" soundLevel="+20db">
+      <desc> a car skidding its tires </desc>
+      Car skid (sound didn't load)
+    </audio>
     <prosody pitch="+5%" volume="+10db" rate="moderate" >
       <s>
         I am sorry about him
