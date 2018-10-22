@@ -238,7 +238,9 @@ module.exports = {
             <break time="10ms" /> 
           well 
             <break time="10ms" />
-          me
+          <emphasis>
+            me
+          </emphasis>
         </prosody>
       </s>
       <s>
