@@ -26,6 +26,16 @@ app.intent('knowledge', conv => {
 app.intent('what happened', conv => {
   let lastWord = conv.body.queryResult.parameters.lastWord
   conv.ask(whatHappened);
+  conv.ask(`
+  <speak> 
+    <s>
+      But i can give show you that i am listening
+    </s>
+    <s>
+      The last word said to invoke this response was
+    </s>
+  `+ lastWord + `
+  </speak>`)
 });
 
 app.intent('Default Fallback Intent', conv => {

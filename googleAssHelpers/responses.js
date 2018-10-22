@@ -189,6 +189,20 @@ module.exports = {
         <s>
           or more accurately the body of a request
         </s>
+        <s>
+          this is handy
+        </s>
+        <s>
+          because this allows me to do things like interact with the database
+        </s>
+        <s> 
+          and provide data that can be used to create more dynamic and logical responses
+        </s>
+      </prosody>
+      <prosody pitch="+10%">
+        unfortunately due to time constraints
+        <break time="5ms" />
+        i will not be able to demonstrate too much of that in this presentation
       </prosody>
     </prosody>
   </speak>
