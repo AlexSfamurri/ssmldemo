@@ -306,10 +306,11 @@ module.exports = {
         </s>
       </prosody>
     </p>
+    <break time="50ms" />
     <p>
       <prosody pitch="+9%" >
         <s>
-          on the right side of the screen we have my 
+          in this response dot js file on the screen we have my 
             <say-as interpret-as="characters">
               ssml
             </say-as> 

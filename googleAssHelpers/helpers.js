@@ -73,7 +73,7 @@ app.intent('under the hood', conv => {
             </say-as> database so far
           </s>
           ${insert}
-          <break time="25ms" />
+          <break time="100ms" />
           how are we doing on time?
         </speak> `
       }));
