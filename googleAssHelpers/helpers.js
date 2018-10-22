@@ -45,11 +45,19 @@ app.intent('what happened', conv => {
         whats next on the agenda
       </s>
     </speak>`);
-  })
+  });
 });
 
 app.intent('under the hood', conv => {
-
+  return db.getWords((results) => {
+    const insert = results.reduce((response, word)=>{
+      return response + ' ' + word;
+    }, '')
+    conv.ask(new SimpleResponse({
+      text: insert,
+      speech: insert
+    }))
+  })
 });
 
 app.intent('Default Fallback Intent', conv => {
