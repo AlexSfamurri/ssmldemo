@@ -26,23 +26,26 @@ app.intent('knowledge', conv => {
 
 app.intent('what happened', conv => {
   let lastWord = conv.body.queryResult.parameters.lastWord
-  conv.ask(whatHappened);
-  conv.ask(`
-  <speak> 
-    <s>
-      But i can show you that i am listening
-    </s>
-    <s>
-      The last word said to invoke this response was
-    </s>
-  `+ lastWord + `
-    <s>
-      So alex
-    </s>
-    <s>
-      whats next on the agenda
-    </s>
-  </speak>`);
+  return db.insertLastWords(lastWord)
+  .then(()=>{
+    conv.ask(whatHappened);
+    conv.ask(`
+    <speak> 
+      <s>
+        But i can show you that i am listening
+      </s>
+      <s>
+        The last word said to invoke this response was
+      </s>
+      ${lastWord}
+      <s>
+        So alex
+      </s>
+      <s>
+        whats next on the agenda
+      </s>
+    </speak>`);
+  })
 });
 
 app.intent('under the hood', conv => {
