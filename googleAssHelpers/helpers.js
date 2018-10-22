@@ -49,15 +49,19 @@ app.intent('what happened', conv => {
 });
 
 app.intent('under the hood', conv => {
-  return db.getWords((results) => {
+  console.log('we made it here, under the hood was invoked');
+  
+  return db.getWords(results => {
+    console.log(results, ' this is the results array');
+    
     const insert = results.reduce((response, word)=>{
       return response + ' ' + word;
-    }, '')
+    }, '');
     conv.ask(new SimpleResponse({
       text: insert,
-      speech: insert
-    }))
-  })
+      speech: `<speak> ${insert} </speak> `
+    }));
+  });
 });
 
 app.intent('Default Fallback Intent', conv => {
