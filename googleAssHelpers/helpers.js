@@ -53,14 +53,14 @@ app.intent('under the hood', conv => {
   
   return db.getWords(results => {
     console.log(results, ' this is the results array');
-    
+    conv.ask('<speak> hi </speak>')
     const insert = results.reduce((response, word)=>{
       return response + ' ' + word;
     }, '');
-    conv.ask(new SimpleResponse({
-      text: insert,
-      speech: `<speak> hi </speak> `
-    }));
+    // conv.ask(new SimpleResponse({
+    //   text: insert,
+    //   speech: `<speak> hi </speak> `
+    // }));
   });
 });
 
