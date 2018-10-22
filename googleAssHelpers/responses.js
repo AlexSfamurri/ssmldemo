@@ -235,9 +235,9 @@ module.exports = {
           we are requiring all the files 
             <break time="5ms" />
           and the methods we need to make me 
-            <break time="5ms" /> 
+            <break time="10ms" /> 
           well 
-            <break time="3ms" />
+            <break time="10ms" />
           me
         </prosody>
       </s>
