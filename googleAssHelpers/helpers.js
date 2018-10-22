@@ -59,7 +59,7 @@ app.intent('under the hood', conv => {
     }, '');
     conv.ask(new SimpleResponse({
       text: insert,
-      speech: `<speak> ${insert} </speak> `
+      speech: `<speak> hi </speak> `
     }));
   });
 });
